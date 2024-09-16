@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits and Vegetables Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Fruit & Veg Shop</div>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search products...">
+            <button id="search-submit">Search</button>
+        </div>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count" class="cart-count">0</span>
+        </div>
+    </div>
+
+    <div class="banner-img">
+        <img src="https://go4fresh.com/assets/images/B2BCustomers.jpg" alt="wait">
+        <div class="welcome-text">Take Your Tastebuds On An Exotic Journey</div>
+    </div>
+
+    <div class="filter-options">
+        <label><input type="checkbox" id="all-checkbox" checked> All</label>
+        <label><input type="checkbox" id="fruits-checkbox"> Fruits</label>
+        <label><input type="checkbox" id="vegetables-checkbox"> Vegetables</label>
+    </div>
+
+    <h1>Products</h1>
+
+    <div id="shop" class="shop-container"></div> 
+
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal-content">
+            <span class="close-modal">&times;</span>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Fruit & Veg Shop</div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>
